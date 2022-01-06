@@ -1,0 +1,10 @@
+#blog_banner{
+    background: #eee;
+
+    .blog_banner_text{
+        h1{
+            @include fs(#333, $f1, 700, 35px);
+            padding: 70px 0;
+        }
+    }
+}

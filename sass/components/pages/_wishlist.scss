@@ -1,0 +1,189 @@
+#wishlist_banner{
+    background: #eee;
+
+    .wishlist_banner_text{
+        h1{
+            @include fs(#333, $f1, 700, 35px);
+            padding: 70px 0;
+        }
+    }
+}
+#wishlist_bread{
+    margin-top: 15px;
+}
+
+#wishlist_main{
+    padding: 60px 0;
+    .wishlist_text{
+        h3{
+            @include fs(#333, $f1, 700, 24px);
+        }
+    }
+    .wishlist{
+        text-align: start;
+        .table{
+            th {
+                @include fs(#333, $f1, 600, 16px);
+                text-transform: capitalize;
+                width: 25%;
+                &:nth-child(2){
+                    padding-left: 90px;
+                }
+                &:nth-child(3){
+                    padding-left: 90px;
+                }
+                &:nth-child(4){
+                    padding-left: 140px;
+                }
+            }
+            td{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .wishlist_img{
+                position: relative;
+                span{
+                    @include fs(#666, $f1, 600, 14px);
+                    padding-left: 10px;
+                }
+                i{
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    -webkit-box-shadow: 0 3px 5px 2px black;
+                    box-shadow: 0 3px 5px 2px black;
+                    text-align: center;
+                    cursor: pointer;
+                    left: 90px;
+                    top: -13px;
+                }    
+            }     
+            .wislist_price{
+                margin-top: 50px;
+                padding-left: 90px;
+                h5{
+                    @include fs(#333, $f1, 600, 14px);
+                }
+            }
+            .wishlist_stock{
+                margin-top: 50px;
+                padding-left: 94px;
+                h4{
+                    @include fs(#336699, $f1, 400, 14px);
+                }
+            }
+            .wishlist_actions{
+                margin-top: 40px;
+                a{
+                    margin-left : 15px;
+                    @include fs(#333, $f1, 600, 13px);
+                    padding: 9px 30px;
+                    border: 1px solid #ccc;
+                    text-transform: uppercase;
+                    border-radius: 3px;
+                    transition: all linear .3s;
+                    &:hover{
+                        background: #333;
+                        color: #fff;
+                    }
+                }
+            }    
+        }     
+    }
+    .wislist_social_media{
+        p{
+            @include fs(#333, $f1, 700, 20px);
+            text-transform: uppercase;
+        }
+
+        .fb{
+            font-size: 14px;
+            color: #666;
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            text-align: center;
+            transition: all linear .3s;
+            margin-left: 10px;
+            &:hover{
+                background-color: #1b4f9b;
+                color: #fff;
+                border-color: #1b4f9b;
+            }
+        }
+        .tt{
+            font-size: 14px;
+            color: #666;
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            text-align: center;
+            transition: all linear .3s;
+            margin-left: 10px;
+            &:hover{
+                background-color: #00adef;
+                color: #fff;
+                border-color: #00adef;
+            }
+        }
+        .pt{
+            font-size: 14px;
+            color: #666;
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            text-align: center;
+            transition: all linear .3s;
+            margin-left: 10px;
+            &:hover{
+                background-color: #f96a02;
+                color: #fff;
+                border-color: #f96a02;
+            }
+        }
+        .el{
+            font-size: 14px;
+            color: #666;
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            text-align: center;
+            transition: all linear .3s;
+            margin-left: 10px;
+            &:hover{
+                background-color: #dd4b39;
+                color: #fff;
+                border-color: #dd4b39;
+            }
+        }
+        .wa{
+            font-size: 14px;
+            color: #666;
+            width: 32px;
+            height: 32px;
+            line-height: 28px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            text-align: center;
+            transition: all linear .3s;
+            margin-left: 10px;
+            &:hover{
+                background-color: #3c8a38;
+                color: #fff;
+                border-color: #3c8a38;
+            }
+        }
+    }
+}

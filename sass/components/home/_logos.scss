@@ -1,0 +1,232 @@
+// @import '../mixin/mixin';
+// @import '../variables/variables';
+
+
+#logos{
+    padding: 35px 0;
+    border-bottom: 1px solid #eee;
+    .search{
+        border: 2px solid #336699;
+        border-radius: 5px;
+        height: 47px;
+        padding-left: 20px;
+        position: relative;
+        &::after{
+            content: "";
+            height: 35px;
+            width: 1px;
+            background: #e5e5e5;
+            position: absolute;
+            left: 160px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 8px;
+        }
+        select{
+            width: 145px;
+            height: 47px;
+            background: transparent;
+            border: 0;
+            position: relative;
+            @include fs(#666666, $f1, 400, 12px);
+            padding: 10px;
+            
+        }
+        input{
+            width: 300px;
+            height: 47px;
+            background: transparent;
+            border: 0;
+            @include fs(#666666, $f1, 400, 12px);
+            margin-left: 6px;
+        }
+        button{
+            background: transparent;
+            border: 0;
+            font-size: 20px;
+            color: #333333;
+            padding-left: 20px;
+        }
+    }
+    .logos_last{
+        .call{
+            position: relative;
+            a{
+                padding-left: 40px;
+                position: relative;
+                margin-right: 60px;
+                p{
+                    @include fs(#333333, $f1, 400, 14px);
+                }
+                h5{
+                    @include fs(#333, $f1, 700, 14px);
+                    padding-top: 5px;
+                }
+                i{
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 30px;
+                    margin-top: 5px;
+                    color: #333333;
+                }
+                &:hover{
+                    p, h5, i{
+                        color: #336699;
+                    }
+                }
+                transition: all linear .3s;
+            }
+            &::after{
+                position: absolute;
+              content: "";
+              top: 50%;
+              transform: translateY(-50%);
+              right: 0;
+              width: 1px;
+              height: 50px;
+              background-color: #e5e5e5;
+              margin: 0 30px;
+            }
+        }
+    }
+    .wishlist{
+
+        a{
+            margin-right: 30px;
+            i{
+                color: #333333;
+                font-size: 30px;
+            }
+            p{
+                @include fs(#333333, $f1, 400, 12px);
+            }
+
+            &:hover{
+                i, p{
+                    color: #336699;
+                }
+            }
+            transition: all linear .3s;
+        }
+    }
+
+    .cart{
+        a{
+            i{
+                color: #333333;
+                font-size: 30px;
+            }
+            
+            p{
+                @include fs(#333333, $f1, 400, 12px);
+            }
+            &:hover{
+                i, p{
+                    color: #336699;
+                }
+            }
+            transition: all linear .3s;
+        }
+        .scbt{
+            padding: 50px 48px;
+            .sb{
+                padding: 0;
+                margin-bottom: 15px;
+                .sc{ 
+                    position: relative;
+                    @include fs(#333333, $f1, 700, 16px);
+                    text-transform: uppercase;;
+                }
+                .bt{
+                    margin-top: -5px;
+                    box-shadow: none;
+                    
+                }
+            }
+
+            .sd{
+                border-top: 1px solid #eee;
+                padding: 0 0;
+               
+                ul{
+                    margin-top: 15px;
+                    &:nth-child(2){
+                        padding-bottom: 15px
+                    }
+                    li{
+                        a{
+                            @include fs(#020101, $f1, 500, 14px);
+                            &:hover{
+                                color: #336699;
+                            }
+                            transition: all linear .3s;
+                            position: relative;
+                        }
+
+                        p{
+                            @include fs(#999, $f1, 400, 16px);
+                            span{
+                                color: #336699;
+                            }
+                            padding-top: 10px;
+                        }
+                        i{
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 2);
+                            text-align: center;
+                            line-height: 20px;
+                            cursor: pointer;
+                            right: 38px;
+                        }
+                        
+                    }
+                }
+                .subtotal{
+                    border-top: 1px solid #eee;
+                    h5{
+                        @include fs(#333333, $f1, 600, 14px);
+                        padding-top: 14px
+                    }
+
+                    p{
+                        @include fs(#333333, $f1, 600, 14px);
+                        padding-top: 14px;
+                    }
+                }
+                .vc{
+                    margin-top: 10px;
+                    a{
+                        @include fs(#333333, $f1, 600, 13px);
+                        background: transparent;
+                        border: 2px solid #333;
+                        border-radius: 5%;
+                        padding: 10px;
+                        text-transform: uppercase;
+                        width: 48%;
+                    
+                        &:nth-child(1){
+                            margin-right:5px;
+                        }
+                        &:nth-child(2){
+                            margin-left: 5px;
+                        }
+                        &:hover{
+                            background-color: #336699;
+                            color: #ffff;
+                            border-color: #336699;
+                        }
+                        transition: all linear .3s;
+                    }
+                }
+            }
+        }
+       
+         
+    }
+}    

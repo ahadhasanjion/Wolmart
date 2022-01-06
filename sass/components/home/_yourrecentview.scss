@@ -1,0 +1,55 @@
+#your_recent_view{
+    padding-bottom: 60px;
+    .yrv{
+        border-bottom: 1px solid #eee;
+        h2{
+            @include fs(#333, $f1, 700, 20px);
+            margin-bottom: 20px;
+        }
+    }
+
+    .yrv_post{
+        margin-top: 20px;
+        ul{
+            li{
+                position: relative;
+                width: 12%;
+                margin-right: 7px;
+                &:nth-child(8){
+                    margin-right: 0;
+                }
+
+                &:hover{ 
+                    .yrv_text{
+                        transform: scale(1);      
+                    }
+
+                }
+                .yrv_text{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(34, 34, 34, 0.6);
+                    transition: all linear .3s;
+                    transform: scale(0);
+                    a{
+                        @include fs(#fff, $f1, 400, 13px);
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        text-align: center;
+                        transform: translate(-50%, -50%);
+                        span{
+                            @include fs(#fff, $f1, 400, 13px);
+                            display: block;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}

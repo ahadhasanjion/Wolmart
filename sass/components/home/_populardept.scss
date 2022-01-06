@@ -1,0 +1,143 @@
+#popular_dep{
+    padding: 60px 0;
+    .popular_text{
+        h2{
+            @include fs(#333, $f1, 700, 20px);
+            margin-bottom: 20px;
+        }
+    }
+    .popular_menu{
+        li{
+            border: 1px solid #ccc;
+            padding: 0px;
+            border-radius: 6px;
+            margin-right: 10px;
+            transition: all linear .3s;
+            &:hover{
+                border-color: #336699;
+            }
+           .ac{
+                background: none;
+                color: #333;
+                @include fs(#333, $f1, 600, 14px);
+                text-transform: uppercase;
+                transition: all linear .3s;
+                &:hover{
+                    color: #336699;
+                }
+            }
+        }
+    }
+    .pop_dep{
+        margin-top: 30px;
+        ul{
+            li{
+                &:hover{
+                    .product_details{
+                        .overl{
+                            ul{
+                                li{
+                                    display: block;
+                                }
+                            }
+                   }    }
+                    
+                   
+                }
+                width: 18%;
+                margin-right: 33px;
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5){
+                    margin-bottom: 20px;
+                }
+                &:nth-child(5),
+                &:nth-child(10){
+                    margin-right: 0;
+                }
+                .product_details{
+                    position: relative;
+                    .overl{
+                        position: absolute;
+                        top: 20%;
+                        right: 5px;
+                        transform: translateY(-20%);
+                        ul{
+                            li{
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                display: none;
+                                transition: all linear .3s;
+                                a{
+                                    width: 35px;
+                                    height: 35px;
+                                    background-color: #fff;
+                                    border: 1px solid #eee;
+                                    border-radius: 50%;
+                                    line-height: 35px;
+                                    text-align: center;
+                                    color: #999;
+                                    transition: all linear .3s;
+                                    &:hover{
+                                        background: #336699;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    h5{
+                        @include fs(#fff, $f1, 700, 12px);
+                        padding: 6px;
+                        background: #f77c29;
+                        position: absolute;
+                        top: 10%;
+                        left: 15px;
+                        text-transform: uppercase
+                    }
+                }
+
+                h4{
+                    a{
+                        @include fs(#333, $f1, 500, 13px);
+                        text-align: center;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: #336699;
+                        }
+                    }
+                }
+                .star{
+                    i{
+                        color: #f77c29;
+                        width: 4%;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        &:nth-child(4),
+                        &:nth-child(5){
+                            color: #ccc;
+                        }
+                        
+                    }
+                    a{
+                        @include fs(#999, $f1, 400, 12px);
+                        transition: all linear .3s;
+                        &:hover{
+                            color: #336699;
+                        }
+                    }
+                }
+                p{
+                 clear: #333;
+                 font-weight: 600;
+                 del{
+                     color: #aaa;
+                     font-weight: 400;
+                 }
+                }
+            }
+        }
+    }
+}

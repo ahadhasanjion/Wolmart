@@ -1,0 +1,27 @@
+#pages_main{
+    padding-bottom: 60px;
+    .pages_main_text{
+        border-top: 1px solid #eee;
+
+        h2{
+            @include fs(#333, $f1, 700, 40px);
+            padding-top: 90px;
+        }
+        h3{
+            @include fs(#333, $f1, 700, 40px);
+        }
+        p{
+            @include fs(#666666, $f1, 400, 14px);
+            padding-top: 20px;
+            span{
+                display: block;
+            }
+        }
+    }
+    .pages_main_img{
+        padding-top: 30px;
+        img{
+            border-radius: 3px;
+        }
+    }
+}

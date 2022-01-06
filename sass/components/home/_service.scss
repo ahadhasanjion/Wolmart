@@ -1,0 +1,25 @@
+#our_services{
+    padding: 40px 0;
+    .services{
+        border: 1px solid #eee;
+        padding: 25px 30px;
+        .service{
+            .iocn{
+                i{
+                    font-size: 35px;
+                    margin-top: 3px;
+                    margin-right: 10px;
+                }
+            }
+            .service_text{
+                h4{
+                    @include fs(#333, $f1, 600, 20px);
+                    margin-bottom: -5px;
+                }
+                p{
+                    @include fs(#666, $f1, 400, 15px);
+                }
+            }
+        }
+    }
+}

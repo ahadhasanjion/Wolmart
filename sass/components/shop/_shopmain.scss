@@ -1,0 +1,246 @@
+.menu_shop{
+    ul{
+        li{
+            .left_menu_dd{
+                display: none;
+            }
+            &:hover{
+                .left_menu_dd{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+#shop_main{
+    padding-bottom: 60px;
+    .filter{
+        margin-bottom: 20px;
+        margin-top: 13px;
+        h5{
+            @include fs(#333, $f1, 600, 14px);
+        }
+        a{
+        @include fs(#333, $f1, 400, 14px);
+        }
+    }
+    .all_cat{
+        margin-top: 10px;
+        >ul{
+            position: relative;
+            >li{
+                @include fs(#333, $f1, 600, 16px);
+                position: relative;
+                margin-top: 26px;
+                &::after{
+                   position: absolute;
+                   content: '';
+                   right: 1px;
+                   top: 50%;
+                   transform: translateY(-50%);
+                   width: 15px;
+                   height: 2px;
+                   background: #333;
+                   transition: all linear .3s;
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    right: 1px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 15px;
+                    height: 2px;
+                    background: #333;
+                    transition: all linear .3s;
+                    transform: rotate(90deg);
+                    transition: all linear.3s;
+                    opacity: 0;
+                }
+                &.collapsed{
+                    &::after{
+                        transform: rotate(180deg);
+                    }
+                    &::before{
+                        transform: rotate(90deg);
+                        opacity: 1;
+                    }
+                }
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: -10px;
+                width: 100%;
+                height: 1px;
+                background: #eee;
+            }
+            &::before{
+                position: absolute;
+                left: 0;
+                width: 100px;
+                bottom: -9px;
+                z-index: 999;
+                content: '';
+                height: 2px;
+                background-color: #666;
+            }
+        }
+        .all_cat_item{
+            ul{
+                li{
+                    margin-top: 20px;
+                    a{
+                        @include fs(#333, $f1, 400, 14px);
+                    }
+                }
+            }
+    
+        }
+    }
+    .filter_right{
+        .filter_left{
+            h5{
+                @include fs(#333, $f1, 600, 14px);
+                margin-top: 13px;
+            }
+            select{
+                align-items: center;
+                padding: 10px 25px;
+                @include fs(#333, $f1, 400, 12px);
+                border-radius: 3px;
+                margin-left: 10px;
+            }
+        }
+        .filter_r{
+            select{
+                padding: 10px 10px;
+                @include fs(#333, $f1, 400, 12px);
+                border-radius: 3px;
+                margin-right: 10px;
+            }
+            .filter_icon{
+                a{
+                    margin-top: 6px;
+                    i{
+                        color: #666;
+                        font-size: 30px;
+                    }
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .shop_product{
+        margin-top: 24px;
+    
+        &:hover{
+            .product_img{
+                .product_overly{
+                    ul{
+                        bottom: 15px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        .product_img{
+            position: relative;
+            &:hover{
+                a{
+                    .first{
+                        display: none;
+                    }
+                    .end{
+                        display: block;
+                    }
+                }
+            }
+            
+            a{
+                display: block;
+                transition: all linear .3s;
+    
+                .end{
+                    display: none;
+                }
+            }
+            
+            .product_overly{
+                ul{
+                    background-color: #fff;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 10px 10px;
+                    left: 48%;
+                    transform: translateX(-48%);
+                    opacity: 0;
+                    visibility: hidden;
+    
+                    transition: all linear .3s;
+                    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+                    li{
+                        margin: 0 8px;
+                        a{                        
+                            i{
+                                color: #666;
+                                transition: all linear .3s;
+                                &:hover{
+                                    color: #336699
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product_text{
+            a{
+                @include fs(#999999, $f1, 400, 11px);
+                text-transform: uppercase;
+                transition: all linear .3s;
+                &:hover{
+                    color: #336699
+                }
+            }
+            h3{
+                a{
+                    @include fs(#333, $f1, 500, 13px);
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #336699
+                    }
+                }
+            }
+            .star{
+                i{
+                    color: #f93;
+                    font-size: 14px;
+                }
+                a{
+                    @include fs(#AAAAAA, $f1, 400, 12px);
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #336699
+                    }
+                }
+            }
+            p{
+                color: #020101;
+                font-size: 16px;
+                font-weight: 600;
+                del{
+                   color: #AAAAAA;
+                   font-weight: 400;
+                   font-size: 16px;
+                }
+            }
+        }
+    }
+    .filter_last{
+        margin-top: 25px;
+    }
+}

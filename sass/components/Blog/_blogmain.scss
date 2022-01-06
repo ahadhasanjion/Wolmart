@@ -1,0 +1,172 @@
+.blog_menu{
+    ul{
+        background: #fff;
+        li{
+            .left_menu_dd{
+                display: none;
+            }
+            &:hover{
+                .left_menu_dd{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+#blog_main{
+    .blog_left{
+        margin-bottom: 30px;
+        &:hover{
+            .blog_img{
+                a{
+                    img{
+                        transform: scale(1.2)
+                    }
+                }
+            }
+        }
+        .blog_img{
+            a{
+                overflow: hidden;
+                img{
+                    transition: all linear .3s;
+                }
+            }
+
+        }
+        .blog_text{
+            .f{
+                @include fs(#336699, $f1, 400, 14px);
+            }
+            h4{
+                a{
+                    @include fs(#333, $f1, 600, 18px);
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #336699;
+                    }
+                }
+            }
+            p{
+                padding-top: 15px;
+                @include fs(#666666, $f1, 400, 13px);
+                a{
+                    @include fs(#336699, $f1, 400, 13px);
+                    transition: all linear .3s;
+                    padding-left: 5px;
+                    &:hover{
+                        color: #666666;
+                    }
+                }
+            }
+            h5{
+                padding-top: 20px;
+                @include fs(#999999, $f1, 400, 13px);
+                span{
+                    @include fs(#333, $f1, 600, 14px);
+                }
+                .date{
+                    @include fs(#333, $f1, 400, 14px);
+                }
+            }
+        }
+    }
+    .blog_right{
+        border: 1px solid #eee;
+        input{
+            width: 251px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            background: transparent;
+            font-weight: 400;
+            font-size: 14px;
+            color: #666;
+            border: 1px solid #eee;
+            border: 0;
+        }
+        button{
+            background: transparent;
+            color: #666666;
+            border: 0;
+            margin-left: 20px;
+        }
+    }
+    .blog_popular_post{
+        margin-top: 30px;
+        .blog_post_slide{
+            margin-top: 20;
+            .row{
+                display: flex;
+                .blog_p_p{
+                    margin-top: 10px
+                }
+                .blog_p_text{
+                    p{
+                        @include fs(#666, $f1, 500, 13px);
+                        padding-top: 20px;
+                    }
+                    a{
+                        @include fs(#333, $f1, 500, 13px);
+                        padding-top: 10px;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: #336699
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .blog_rightt{
+        h3{
+            @include fs(#333, $f1, 600, 16px);
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        ul{
+            li{
+                padding-top: 10px;
+                a{
+                    transition: all linear .3s;
+                    @include fs(#333, $f1, 400, 14px);
+                    &:hover{
+                        color: #336699;
+                    }
+                }
+            }
+        }
+    }
+    .blog_rightf{
+        h3{
+            @include fs(#333, $f1, 600, 16px);
+            margin-top: 30px;
+        }
+        p{
+            @include fs(#666666, $f1, 400, 14px);
+            margin-top: 30px;
+        }
+    }
+    .blog_rightfi{
+        h3{
+            @include fs(#333, $f1, 600, 16px);
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .tag{
+            margin-bottom: 10px;
+            a{
+                @include fs(#333, $f1, 400, 13px);
+                margin-right: 10px;
+                padding: 5px 9px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                transition: all linear .3s;
+                &:hover{
+                    color: #336699;
+                    border-color: #336699;
+                }
+            }
+        }
+    }
+}

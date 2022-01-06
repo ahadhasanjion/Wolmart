@@ -1,0 +1,146 @@
+#cotm {
+    background: #f5f5f5;
+    padding: 60px 0;
+
+    h2 {
+        @include fs(#333, $f1, 700, 20px);
+        text-align: center;
+        margin-bottom: 30px;
+    }  
+    .categ_img {
+        position: relative;
+        overflow: hidden;
+        margin-right: 20px;
+        a{
+            img{
+                transition: all linear .3s;
+            }
+        }
+        &:hover{
+            .categ_text{
+                h4{
+                    transform: translateY(-30px);
+                }
+            }
+            a{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+        .categ_text {
+            position: absolute;
+            left: 50%;
+            bottom: 12px;
+            transform: translateX(-50%);
+            height: 30px;
+            overflow: hidden;
+            text-align: center;
+            &:hover{
+                h4{
+                    transform: translateY(-30px);
+                }
+            }
+            h4{
+                transition: all linear .3s;
+                a{
+                    &:nth-child(1){
+                        @include fs(#333, $f1, 500, 15px);
+                        margin-bottom: 0;
+                    }
+                    
+                    &:nth-child(2){
+                        @include fs(#336699, $f1, 700, 14px);
+                        text-transform: uppercase;
+                        position: relative;
+                        &:after{
+                          position: absolute;
+                          content: '';
+                          height: 3px;
+                          width: 100%;
+                          background: #336699;
+                          bottom: -1px;
+                          left: 0;
+                          transform: scale(0);
+                          transition: all linear .3s;
+                        }
+                        &:hover{
+                            &::after{
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .categ_im{
+        position: relative;
+        overflow: hidden;
+        margin-left: 10px;
+        a{
+            img{
+                transition: all linear .3s;
+            }
+        }
+        &:hover{
+            .categ_text{
+                h4{
+                    transform: translateY(-30px);
+                }
+            }
+            a{
+                img{
+                    transform: scale(1.1);
+                }
+            } 
+           
+        }
+        .categ_text {
+            position: absolute;
+            left: 50%;
+            bottom: 12px;
+            transform: translateX(-50%);
+            height: 30px;
+            overflow: hidden;
+            text-align: center;
+            &:hover{
+                h4{
+                    transform: translateY(-30px);
+                }
+            }
+            h4{
+                transition: all linear .3s;
+                a{
+                    &:nth-child(1){
+                        @include fs(#333, $f1, 500, 15px);
+                        margin-bottom: 0;
+                    }
+                    
+                    &:nth-child(2){
+                        @include fs(#336699, $f1, 700, 14px);
+                        text-transform: uppercase;
+                        position: relative;
+                        &:after{
+                          position: absolute;
+                          content: '';
+                          height: 3px;
+                          width: 100%;
+                          background: #336699;
+                          bottom: -1px;
+                          left: 0;
+                          transform: scale(0);
+                          transition: all linear .3s;
+                        }
+                        &:hover{
+                            &::after{
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }          
+}

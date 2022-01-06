@@ -1,0 +1,66 @@
+#offer{
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    .goff{
+        // margin-left: -13px;
+            position: relative;
+        
+        .overly{
+            position: absolute;
+            right: 60%;
+            top: 23%;
+            h5{
+                @include fs(#666, $f1, 400, 18px);
+                padding-bottom: 5px;
+                span{
+                    @include fs(#f77c29, $f1, 700, 18px);
+                    text-transform: uppercase
+                }
+            }
+            h3{
+                @include fs(#333, $f1, 600, 26px);
+                text-transform: uppercase;
+                span{
+                    @include fs(#333, $f1, 400, 26px);
+                    display: block;
+                    padding-bottom: 10px
+                }
+            }
+            p{
+                @include fs(#666, $f1, 400, 14px);
+                span{
+                    color: #f77c29;
+                }
+            }
+        }
+    }
+    .NewA{
+        // margin-left: 38px;
+        position: relative;
+        .overly{
+            position: absolute;
+            right: 65%;
+            top: 23%;
+            h5{
+                @include fs(#c4c4c5, $f1, 400, 18px);
+                padding-bottom: 5px;
+            }
+            h3{
+                @include fs(#fff, $f1, 600, 26px);
+                text-transform: uppercase;
+                span{
+                    @include fs(#fff, $f1, 400, 26px);
+                    display: block;
+                }
+                padding-bottom: 10px
+            }
+            p{
+                @include fs(#fff, $f1, 400, 14px);
+                span{
+                    color: #f77c29;
+                }
+            }
+        }
+    }
+}

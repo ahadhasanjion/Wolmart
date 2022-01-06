@@ -1,0 +1,160 @@
+#clothingandapparel{
+    padding-bottom: 60px;
+    .clothingappparel{
+        border-bottom: 1px solid #eee;
+        h2{
+            @include fs(#333, $f1, 700, 20px);
+        }
+        margin-bottom: 20px;
+        a{
+            @include fs(#333, $f1, 600, 14px);
+            i{
+                margin-left: 5px;
+            }
+            margin-bottom: 20px;
+            transition: all linear .3s;
+            &:hover{
+                color: #336699;
+            }
+        }
+
+    }
+    .newarrivalScollection{
+        position: relative;
+        .newarrivalScollection_text{
+            position: absolute;
+            top: 8%;
+            left: 36px;
+            h5{
+                @include fs(#333, $f1, 400, 18px);
+                position: relative;
+                margin-bottom: 25px;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -14px;
+                    width: 38px;
+                    height: 3px ;
+                    background-color: #333;
+                }
+            }
+            h3{
+                @include fs(#333, $f1, 700, 30px);
+                text-transform: uppercase;
+                span{
+                    @include fs(#333, $f1, 400, 30px);
+                    display: block;
+                    text-transform: capitalize;
+                }
+                margin-bottom: 25px;
+            }
+            a{
+                @include fs(#333, $f1, 600, 13px);
+                text-transform: uppercase;
+                padding: 6px 15px;
+                border: 2px solid #333;
+                border-radius: 3px;
+                transition: all linear .3s;
+                &:hover{
+                    background-color: #333;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+    .newarrivals_product{
+        // margin-right: 30px;
+        position: relative;
+        text-align: center;
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4){
+            margin-bottom: 20px;
+        }
+        &:hover{
+            .ovl{
+                ul{
+                    li{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .ovl{
+            position: absolute;
+            top: 8%;
+            right: 5px;
+            transform: translateY(-8%);
+            ul{
+                li{
+                    margin-right: 0;
+                    margin-bottom: 5px;
+                    display: none;
+                    transition: all linear .3s;
+                    a{
+                        width: 35px;
+                        height: 35px;
+                        background-color: #fff;
+                        border: 1px solid #eee;
+                        border-radius: 50%;
+                        line-height: 35px;
+                        text-align: center;
+                        color: #999;
+                        transition: all linear .3s; 
+                        &:hover{
+                            background: #336699;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        h4{
+            line-height: 0;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            a{
+                @include fs(#333, $f1, 500, 13px);
+                text-align: center;
+                transition: all linear .3s;
+                &:hover{
+                   color: #336699;
+                }
+            }
+        }
+
+        .star{
+            padding-top: 0px;
+            i{
+                color: #f77c29;
+                width: 4%;
+                font-size: 12px;
+                white-space: nowrap;
+                &:nth-child(4),
+                &:nth-child(5){
+                    color: #ccc;
+                }
+            }
+            a{
+                @include fs(#999, $f1, 400, 12px);
+                transition: all linear .3s;
+                &:hover{
+                    color: #336699;
+                }
+            }
+        }
+        p{
+            padding-top: 0px;
+            clear: #333;
+            font-weight: 700;
+            font-size: 15px;
+            del{
+                color: #aaa;
+                font-weight: 700;
+            }
+        }
+    }
+}

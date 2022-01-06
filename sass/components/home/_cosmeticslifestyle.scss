@@ -1,0 +1,97 @@
+#cosmeticandlifestyle{
+    padding-bottom: 60px;
+    .cosmetics{
+        position: relative;
+        .ovarlay{
+            position: absolute;
+            left: 41px;
+            top: 19%;
+            h5{
+                @include fs(#eee, $f1, 600, 14px);
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            h3{
+                @include fs(#fff, $f1, 700, 30px);
+                text-transform: capitalize;
+                white-space:normal;
+                span{
+                    display: block;
+                }
+                margin-bottom: 15px
+            }
+            a{
+                @include fs(#fff, $f1, 600, 14px);
+                text-transform: uppercase;
+                position: relative;
+                i{
+                    font-size: 13px;
+                    margin-left: 5px;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    height: 3px;
+                    background-color: #fff;
+                    transform: scale(0);
+                    transition: all linear .3s;
+                }
+                &:hover{
+                    &::after{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+    .lifestyle{
+        position: relative;
+        .ovarlay{
+            position: absolute;
+            left: 41px;
+            top: 19%;
+            h5{
+                @include fs(#333, $f1, 600, 14px);
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            h3{
+                @include fs(#333, $f1, 700, 30px);
+                text-transform: capitalize;
+                white-space:normal;
+                span{
+                    display: block;
+                }
+                margin-bottom: 15px
+            }
+            a{
+                @include fs(#333, $f1, 600, 14px);
+                text-transform: uppercase;
+                position: relative;
+                i{
+                    font-size: 13px;
+                    margin-left: 5px;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    height: 3px;
+                    background-color: #333;
+                    transform: scale(0);
+                    transition: all linear .3s;
+                }
+                &:hover{
+                    &::after{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}

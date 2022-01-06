@@ -1,0 +1,21 @@
+#our_sales{
+    padding: 60px 0;
+
+    .counter_text{
+        h5{
+            @include fs(#ccc, $f1, 800, 40px);
+        }
+
+        h4{
+            @include fs(#333, $f1, 700, 20px);
+            padding-top: 15px;
+        }
+        p{
+            @include fs(#666, $f1, 400, 14px);
+            span{
+                display: block;
+            }
+            padding-top: 15px;
+        }
+    }
+}

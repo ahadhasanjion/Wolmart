@@ -1,0 +1,55 @@
+#subscribe{
+    padding: 30px 0;
+    background-color: #336699;
+
+
+    .sub_news{
+        i{
+            font-size: 50px;
+            color: #fff;
+        }
+        .sub_news_text{
+            margin-left: 20px;
+            margin-top: 5px;
+            h4{
+                @include fs(#fff, $f1, 600, 16px);
+                text-transform: uppercase
+            }
+            p{
+                @include fs(#fff, $f1, 400, 13px);
+            }
+        }
+    }
+    .email_ad{
+
+        input{
+            width: 550px;
+            height: 47px;
+            background: #fff;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            @include fs(#666666, $f1, 400, 14px);
+            margin-left: 40px;
+            padding: 0 20px
+        }
+
+        .sub{
+            @include fs(#fff, $f1, 600, 14px);
+            text-transform: uppercase;
+            border-radius: 3px;
+            padding: 12px 30px;
+            background-color: black;
+            border: 1px solid black;
+            transition: all linear .3s;
+            i{
+                padding-left: 5px;
+            }
+            &:hover{
+                background-color: #333;
+                border-color: #333;
+            }
+
+        }
+    }
+
+}

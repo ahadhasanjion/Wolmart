@@ -1,0 +1,149 @@
+
+.banner_item{
+    padding: 65px 0;
+    .banner_text{
+        text-align: end;
+        margin-top: 60px;
+        margin-left: 56px;
+        h5{
+            @include fs(#666, $f1, 400, 40px);
+            span{
+                position: relative;
+                &:after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 8px;
+                    width: 100%;
+                    height: 3px;
+                    background-color: #f77c29;
+                }
+            }
+        }
+        h3{
+            @include fs(#333, $f1, 700, 45px);
+            text-transform: uppercase;
+        }
+        p{
+            @include fs(#666, $f1, 400, 25px);
+            span{
+                color: #f77c29;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+        a{
+            @include fs(#333, $f1, 700, 15px);
+            text-transform: uppercase;
+            border: 2px solid #333;
+            padding: 14px 38px;
+            background: transparent;
+            opacity: 1;
+            border-radius: 5%;
+            i{
+                margin-left: 5px;
+            }
+            margin-top: 20px;
+            &:hover{
+                background-color: #333;
+                color: #ffff
+            }
+            transition: all linear .3s
+        }
+    }
+    .banner_ig{
+        margin-right: -15px;
+    }
+    .banner_t{
+        margin-top: 80px;
+        h5{
+            @include fs(#666, $f1, 400, 38px);
+            span{
+                color: #f77c29;
+                
+            }
+        }
+        h3{
+            @include fs(#333, $f1, 700, 40px);
+            text-transform: uppercase;
+        }
+        p{
+            @include fs(#666, $f1, 400, 24px);
+            span{
+                color: #f77c29;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+        a{
+            @include fs(#333, $f1, 700, 15px);
+            text-transform: uppercase;
+            border: 2px solid #333;
+            padding: 14px 38px;
+            background: transparent;
+            opacity: 1;
+            border-radius: 5%;
+            i{
+                margin-left: 5px;
+            }
+            margin-top: 20px;
+            &:hover{
+                background-color: #333;
+                color: #ffff
+            }
+            transition: all linear .3s
+        }
+    }
+    .banner_tex{
+        text-align: end;
+        margin-top: 80px;
+        margin-right: 55px;
+        h5{
+            @include fs(#666, $f1, 400, 22px);
+            text-transform: uppercase;
+        }
+        h3{
+            @include fs(#666, $f1, 400, 39px);
+        }
+        p{
+            @include fs(#666, $f1, 700, 40px);
+            span{
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                width:170px;
+                right: 0px;
+                bottom: 0;
+                height: 3px;
+                background: #f77c29;
+            }
+            text-transform: uppercase;
+        }
+        a{
+            @include fs(#333, $f1, 700, 15px);
+            text-transform: uppercase;
+            border: 2px solid #333;
+            padding: 14px 38px;
+            background: transparent;
+            opacity: 1;
+            border-radius: 5%;
+            i{
+                margin-left: 5px;
+            }
+            margin-top: 20px;
+            &:hover{
+                background-color: #333;
+                color: #ffff
+            }
+            transition: all linear .3s
+        }
+
+
+    }
+    
+}

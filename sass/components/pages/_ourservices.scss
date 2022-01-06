@@ -1,0 +1,56 @@
+#service{
+    padding: 80px 0;
+    background: #fafafb;
+
+
+    .service_img{
+        img{
+            border-radius: 10px;
+        }
+    }
+    .service_text{
+        margin-top: 80px;
+        margin-left: 20px;
+        h4{
+            @include fs(#333, $f1, 700, 34px);
+            span{
+                display: block;
+            }
+            margin-bottom: 10px;
+        }
+        p{
+            @include fs(#666, $f1, 400, 14px);
+        }
+        a{
+            margin-top: 30px;
+            @include fs(#fff, $f1, 600, 14px);
+            text-transform: uppercase;
+            padding: 14px 23px;
+            background: black;
+            transition: all linear .3s;
+            &:hover{
+                background: #333;
+            }
+        }
+    }
+    .awards{
+        margin-top: 60px;
+        h4{
+            @include fs(#333, $f1, 600, 30px);
+        }
+    }
+    .award_list{
+        margin-top: 60px;
+        .awards_name{
+            width: 25%;
+
+            h4{
+                @include fs(#333, $f1, 400, 20px);
+                padding-top: 10px
+            }
+            p{
+                @include fs(#333, $f1, 400, 20px);
+            }
+        }
+    }
+}

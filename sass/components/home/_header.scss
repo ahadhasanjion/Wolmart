@@ -1,0 +1,271 @@
+@import '../../mixin/mixin';
+@import '../../variables/variables';
+
+
+#header{
+    background: #f5f6f8;
+    height: 45px;
+    line-height: 45px;
+    .header_left{
+        p{
+            @include fs($c1, $f1, 400, 11px);
+
+        }
+    }
+    .header_right{
+        .curren{
+            &:nth-child(1){
+                margin-right: 20px;
+            }
+            ul{
+                li{
+                    position:relative;
+
+                    a{
+                        @include fs($c1, $f1, 400, 11px);
+                        &:hover{
+                            color: #336699;
+                        }
+                        transition: all linear .3s;
+
+                        i{
+                            font-size: 10px;
+                            margin-left: 5px;
+                        }
+                    }
+                    ul{
+                        position: absolute;
+                        top: 100%;
+                        left: -9px;
+                        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+                        width: 50px;
+                        height: 50px;
+                        text-align: center;
+                        display: none;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            left: 50%;
+                            top: -61%;
+                            transform: translateX(-50%);
+                            border-top: 15px solid transparent;
+                            border-right: 15px solid transparent;
+                            border-left: 15px solid transparent;
+                            border-bottom: 15px solid #fff;
+                        }  
+
+                        li{
+                            line-height: 20px;
+                            a{
+                                color: #666;
+                            }
+                        }
+                    }
+                    &:hover{
+                        ul{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .divider{
+            width: 1px;
+            height: 24px;
+            background: #ccc;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .header_menu{
+            ul{
+                li{
+                    margin-left: 20px;
+                    a{
+                        @include fs($c1, $f1, 400, 11px);
+                        &:hover{
+                            color: #336699;
+                        }
+                        transition: all linear .3s;
+                
+                    }    
+                }
+            }
+        }
+
+        .sandg{
+            margin-left: 20px;
+            ul{
+                li{
+                    a{
+                        @include fs($c1, $f1, 400, 12px);
+                        &:hover{
+                            color: #336699;
+                        }
+                        transition: all linear .3s;
+                    }
+                }
+                span{
+                    margin: 0 5px;
+                }
+            }
+            .si{
+                padding: 20px;
+                margin-top: 42px;
+                .cross{
+                    position: absolute;
+                    right: 0;
+                    top: -5%;
+                    font-size: 20px;
+                    color: #fff;
+                    transform: translateY(-5%);
+                    transform: rotate(0);
+                    cursor: pointer;
+                    z-index: 999;
+                    overflow: hidden;
+                    &:hover{
+                      transform: rotate(90deg) scale(1.4);
+                      overflow: visible;
+                    }
+                    transition: all linear .3s;
+                }
+
+                .m_s{
+                    .m_i{
+                        margin-right: 10px;
+                        &:nth-child(2){
+                            margin-left: 10px;
+                            margin-right: 0;
+                        }
+                        text-align: center;
+                        width: 47.82%;
+                        .inup{
+                            @include fs(#333333, $f1, 700, 16px);
+                            background: none;
+                            text-transform: uppercase;
+                            padding: 8px 0;
+                            border-bottom: 2px solid #eee;
+                            border-radius: 0;
+                            width: 100%;
+                            padding: 0 0;
+                            &:hover{
+                                border-color: #336699;
+                                color: #336699;
+                            }
+                        }
+                    }
+                }
+
+                .fs{
+                    @include fs (#666, $f1, 400, 13px);
+                    margin-bottom: 0;
+                    a{
+                        @include fs(#336699, $f1, 400, 13px);
+                    }
+
+                    span{
+                        @include fs(#A94442, $f1, 400, 13px);
+                        margin-left: 205px;
+                        
+                    }
+                }
+
+                .para{
+                    @include fs(#666, $f1, 400, 13px);
+                    line-height: 30px;
+                    a{
+                        color: #336699 ;
+                    }
+                }
+
+                .su{
+                    @include fs(#336699, $f1, 400, 13px);
+                    margin-bottom: 5px;
+                }
+
+                .ib{
+                    border-radius: 0;
+                    box-shadow: none;
+                    border-color: #eee;
+                    
+                }
+                
+
+                .bt{
+                    @include fs(#fff, $f1, 700, 14px);
+                    background-color: #336699;
+                    width: 100%;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-radius: 0;
+                    text-transform: uppercase;
+                    border-color: none;
+                    box-shadow: none;
+                    border-color: #336699;
+                }
+
+                .f{
+                    border-radius: 0;
+                    margin-top: 17px;
+                    box-shadow: none;
+                    border-color: #eee;
+                    background-color: #333333;
+                    cursor: pointer;
+                }
+
+                .sm{
+                
+                    .fb{
+                        color: #1b4f9b;
+                        border: 1px solid #1b4f9b;
+                        border-radius: 50%;
+                        width: 32px;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        margin-right: 10px;
+                        &:hover{
+                            background-color: #1b4f9b;
+                            color: #fff;
+                        }
+                        transition: all linear .3s;
+                    }
+
+                    .tt{
+                        color: #00adef;
+                        border: 1px solid #00adef;
+                        border-radius: 50%;
+                        width: 32px;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        margin-right: 10px;
+                        &:hover{
+                            background-color: #00adef;
+                            color: #fff;
+                        }
+                        transition: all linear .3s;
+                    }
+                    
+                    .ig{
+                        color: #C13584;
+                        border: 1px solid #C13584;
+                        border-radius: 50%;
+                        width: 32px;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        margin-right: 10px;
+                        &:hover{
+                            background-color: #C13584;
+                            color: #fff;
+                        }
+                        transition: all linear .3s;
+                    }
+                }
+
+            }
+        }
+    }
+}

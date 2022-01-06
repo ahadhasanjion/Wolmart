@@ -1,0 +1,17 @@
+#ourclients{
+    padding-bottom: 60px;
+    .our_clients{
+        border-bottom: 1px solid #eee;
+        h2{
+            @include fs(#333, $f1, 700, 20px);
+            margin-bottom: 20px;
+        }
+        margin-bottom: 20px;
+    }
+    .clients{
+        .clients_name{
+            border: 1px solid #eee;
+            width: 16.6666666667%;
+        }
+    }
+}

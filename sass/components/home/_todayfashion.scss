@@ -1,0 +1,81 @@
+#for_today_fashion{
+    padding-bottom: 60px;
+
+    .f_t_f{
+        position: relative;
+        .ftf_text{
+            position: absolute;
+            top:30%;
+            left: 0;
+            padding: 0 60px;
+            .ftf_left{
+                .ftf_l{
+                    h2{
+                        @include fs(#f77c29, $f1, 700, 60px);
+                    }
+                    h4{
+                        margin-right: 40px;
+                        .dis{
+                            font-size: 45px;
+                            display: block;
+                            margin-top: 13px;
+                            margin-bottom: 20px;
+                            color: #f77c29;
+                            margin-left: 3px;
+                            font-weight: 700;
+                        }
+                        .off{
+                            text-transform: uppercase;
+                            @include fs(#f77c29, $f1, 700, 22px);
+                            margin-left: 3px;
+                        }
+                    }
+                }
+                .ftf_midle{
+                    position: relative;
+                    margin-left: 40px;
+                    margin-top: 0;
+                    h3{
+                        @include fs(#fff, $f1, 700, 30px);
+                        text-transform: uppercase;
+                    }
+                    p{
+                        @include fs(#fff, $f1, 400, 18px);
+                        span{
+                            @include fs(black, $f1, 600, 18px);
+                            background: #fff;
+                        }
+                        line-height: 50px;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        width: 2px;
+                        height: 75px;
+                        background-color: #666;
+                        top: 0;
+                        left: -40px;
+                    }
+                }
+
+            }
+            .ftf_right{
+                margin-left: 473px;
+                margin-top: 20px;
+                a{
+                    @include fs(#fff, $f1, 600, 18px);
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    border: 2px solid #fff;
+                    border-radius: 3px;
+                    padding: 8px 20px;
+                    transition: all linear .3s;
+                    &:hover{
+                        background-color: #fff;
+                        color: #336699;
+                    }
+                }
+            }
+        }
+    }
+}
